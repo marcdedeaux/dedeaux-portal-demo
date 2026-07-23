@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dedeaux Properties internal industrial intelligence portal">
+  <title>Dedeaux Properties Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginView" class="login-view">
+    <section class="login-panel">
+      <div class="brand-lockup">
+        <div class="brand-mark">D</div>
+        <div><div class="brand-name">DEDEAUX</div><div class="brand-sub">PROPERTIES</div></div>
+      </div>
+      <div class="login-copy">
+        <p class="eyebrow">Internal Portal</p>
+        <h1>Industrial Intelligence</h1>
+        <p>A simple, searchable home for Dedeaux Properties market information, reports, properties, and development intelligence.</p>
+      </div>
+      <form id="loginForm" class="login-form">
+        <label>Email<input id="email" type="email" value="team@dedeaux.com" autocomplete="username"></label>
+        <label>Password<input id="password" type="password" value="demo" autocomplete="current-password"></label>
+        <button type="submit">Sign In</button>
+        <p class="login-note">Demo access only. Replace with secure authentication before storing confidential information.</p>
+      </form>
+    </section>
+    <section class="login-visual">
+      <div class="visual-grid">
+        <div class="visual-card large"><span>COMPS</span><strong>Market evidence, organized.</strong></div>
+        <div class="visual-card"><span>PROPERTIES</span><strong>One portfolio source of truth.</strong></div>
+        <div class="visual-card"><span>INTELLIGENCE</span><strong>What requires attention now.</strong></div>
+        <div class="visual-card wide"><span>DEVELOPMENT</span><strong>Determine the building most likely to achieve the highest rent and fastest lease-up.</strong></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="portalView" class="portal-view hidden">
+    <header class="topbar">
+      <button id="menuButton" class="menu-button" aria-label="Open navigation">☰</button>
+      <div class="brand-lockup compact">
+        <div class="brand-mark">D</div>
+        <div><div class="brand-name">DEDEAUX</div><div class="brand-sub">PROPERTIES</div></div>
+      </div>
+      <div class="global-search-wrap">
+        <input id="globalSearch" type="search" placeholder="Search the entire portal…" aria-label="Search the entire portal">
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
+      <div class="top-actions"><button id="editHelp" class="text-button">Editing Guide</button><button id="signOut" class="avatar">DP</button></div>
+    </header>
+
+    <div class="shell">
+      <aside id="sidebar" class="sidebar"><nav id="nav"></nav></aside>
+      <main id="main" class="main" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
